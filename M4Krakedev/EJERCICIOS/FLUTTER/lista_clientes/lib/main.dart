@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lista_clientes/pages/customers_page.dart';
+import 'package:lista_clientes/pages/customersList_page.dart';
 import 'package:lista_clientes/pages/home_page.dart';
 import 'package:lista_clientes/pages/routes.dart';
 
@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: HomePage(), routes: {
-        Routes.customers: (ctx) =>const CustomersPage(),
+        Routes.customers: (ctx) =>CustomersListPage(),
       }
     );
   }

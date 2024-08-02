@@ -7,12 +7,11 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.blue,
       ),
       body: Column(
          crossAxisAlignment: CrossAxisAlignment.stretch,
          children: [MaterialButton(onPressed: (){
-           //Navigator.push(context, MaterialPageRoute(builder: (context)=>CustomersPage()));
             Navigator.pushNamed(context, Routes.customers);
           },
           child:const Text('Ir a Clientes')
