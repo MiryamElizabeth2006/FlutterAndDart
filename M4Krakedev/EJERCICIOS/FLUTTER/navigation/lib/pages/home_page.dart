@@ -32,6 +32,13 @@ class HomePage extends StatelessWidget{
         color: Colors.blue,
         child:const Text('IR A LISTVIEW BÁSICO '),
         ),
+        MaterialButton(onPressed: (){
+          //Navigator.push(context, MaterialPageRoute(builder: (context)=>CustomersPage()));
+          Navigator.pushNamed(context, Routes.productsList);
+        },
+        color: Colors.blue,
+        child:const Text('IR A LISTA DE PRODUCTOS'),
+        ),
         ],
       ),
       );

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:navigation/pages/customers_page.dart';
 import 'package:navigation/pages/home_page.dart';
 import 'package:navigation/pages/listview_pages.dart';
+import 'package:navigation/pages/productList_page.dart';
 import 'package:navigation/pages/products_page.dart';
 import 'package:navigation/pages/routes.dart';
 
@@ -18,6 +19,7 @@ class MainApp extends StatelessWidget {
       Routes.products: (context) => ProductsPage(),
       Routes.customers: (ctx) {return CustomersPage();},
       Routes.listview: (context) => const ListviewPages(),
+      Routes.productsList:(context) => ProductListPage(),
     });
   }
 }
